@@ -1,0 +1,9 @@
+.cd-rotate {
+    animation: cd-rotate 2.5s linear infinite;
+}
+
+@keyframes cd-rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}

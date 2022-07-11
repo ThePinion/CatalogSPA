@@ -1,24 +1,5 @@
-# catalog-spa
+# CatalogSpa
+This is a Vue SPA project used to connect to the CatalogApi web api project.
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Notes
+* Font used: https://fonts.google.com/specimen/Poppins

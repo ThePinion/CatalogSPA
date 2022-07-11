@@ -1,0 +1,43 @@
+@import "fonts/fonts.scss";
+@import "variables.scss";
+@import "base/animations.scss";
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: $background-color;
+}
+
+button,
+input {
+    box-sizing: border-box;
+    height: 2rem;
+    border-radius: .6rem;
+    margin: 0px .5rem;
+    color: $font-color;
+}
+
+button {
+    border: none;
+    line-height: 2rem;
+    transition: ease-in-out .5s;
+    background-color: $background-color;
+
+    &:hover {
+        cursor: pointer;
+        color: $primary-color;
+    }
+}
+
+input {
+    border: $border-width solid $black;
+    width: 50%;
+    padding-left: .5rem;
+    background-color: $background-color;
+
+    &:focus {
+        outline: none;
+        border-color: $primary-color;
+    }
+}

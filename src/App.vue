@@ -1,30 +1,34 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
-</template>
+    <nav>
+        <div class="logo">
+            <font-awesome-icon class="cd-rotate" icon="fa-solid fa-compact-disc" />
+            Catalog
+        </div>
 
+        <search-box-vue />
+    </nav>
+    <router-view />
+</template>
+<script setup>
+import SearchBoxVue from './components/SearchBox.vue';
+</script>
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+nav {
+    padding: 1rem 0rem;
+    border-bottom: $border-width solid $black;
+    text-align: center;
+
+    input {
+        width: 300px;
+    }
 }
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.logo {
+    position: absolute;
+    font-size: 25px;
+    top: .6rem;
+    left: 1rem;
+    height: 4rem;
+    line-height: 3rem;
 }
 </style>
